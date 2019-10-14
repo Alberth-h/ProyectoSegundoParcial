@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Juguetes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock x:Name="lblJuguetesProducto" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Producto:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesPrecio" HorizontalAlignment="Left" Margin="10,201,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesCantidad" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" Text="Cantidad:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesDescuento" HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesCodigo" HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Codigo:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesDescripcion" HorizontalAlignment="Left" Margin="10,86,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoJuguetes" HorizontalAlignment="Left" Height="23" Margin="102,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescripcionJuguetes" HorizontalAlignment="Left" Height="23" Margin="102,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCantidadJuguetes" HorizontalAlignment="Left" Height="23" Margin="102,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescuentoJuguetes" HorizontalAlignment="Left" Height="23" Margin="102,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPrecioJuguetes" HorizontalAlignment="Left" Height="23" Margin="102,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbJuguetes" HorizontalAlignment="Left" Margin="102,10,0,0" VerticalAlignment="Top" Width="156" SelectionChanged="CbJuguetes_SelectionChanged">
+            <ComboBoxItem>Figura de accion Max Steel</ComboBoxItem>
+            <ComboBoxItem>Carrito Hot Wheels</ComboBoxItem>
+            <ComboBoxItem>Pista de carreras Hot Wheels</ComboBoxItem>
+            <ComboBoxItem>Muñeco de tela</ComboBoxItem>
+            <ComboBoxItem>Muñeca Barbie</ComboBoxItem>
+            <ComboBoxItem>Juego de Legos</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="lblJuguetesOferta" HorizontalAlignment="Left" Margin="10,242,0,0" TextWrapping="Wrap" Text="Oferta 3x2" VerticalAlignment="Top"  Height="18" Width="64" TextAlignment="Justify"/>
+        <TextBlock x:Name="lblJuguetesTipoVales" HorizontalAlignment="Left" Margin="10,309,0,0" TextWrapping="Wrap" Text="Si indico que si eliga su tipo de tarjeta:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblJuguetesVales" HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="Usar vales de tarjeta:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbJuguetesValesNinguna" Content="Ninguna" HorizontalAlignment="Left" Margin="237,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxJuguetesValesSi" Content="Si" HorizontalAlignment="Left" Margin="152,278,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbJuguetesValesBasica" Content="Basica" HorizontalAlignment="Left" Margin="318,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxJuguetesValesNo" Content="No" HorizontalAlignment="Left" Margin="208,278,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbJuguetesValesAmigoSoriana" Content="AmigoSoriana" HorizontalAlignment="Left" Margin="390,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbJuguetesValesDeluxe" Content="Deluxe" HorizontalAlignment="Left" Margin="506,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbJuguetesValesPro" Content="ProMasterComprador" HorizontalAlignment="Left" Margin="584,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxJuguetesOfertaSi" Content="Si" HorizontalAlignment="Left" Margin="130,242,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxJuguetesOfertaNo" Content="No" HorizontalAlignment="Left" Margin="186,242,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="imgChucky" Visibility="Hidden" Margin="318,0,172,158" Source="360-3604607_chucky-clipart-chucky-png-transparent-png.png" Stretch="Fill"/>
+
+    </Grid>
+</UserControl>

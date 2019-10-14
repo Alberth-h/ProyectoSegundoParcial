@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.EquipoLimpieza"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock x:Name="lblEquipoLimpiezaProducto" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Producto:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaPrecio" HorizontalAlignment="Left" Margin="10,201,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaCantidad" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" Text="Cantidad:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaDescuento" HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaCodigo" HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Codigo:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaDescripcion" HorizontalAlignment="Left" Margin="10,86,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoLimpieza" HorizontalAlignment="Left" Height="23" Margin="102,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescripcionLimpieza" HorizontalAlignment="Left" Height="23" Margin="102,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCantidadLimpieza" HorizontalAlignment="Left" Height="23" Margin="102,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescuentoLimpieza" HorizontalAlignment="Left" Height="23" Margin="102,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPrecioLimpieza" HorizontalAlignment="Left" Height="23" Margin="102,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="lblEquipoLimpiezaKit" HorizontalAlignment="Left" Margin="10,233,0,0" TextWrapping="Wrap" Text="Kit especial ($30 extra)" VerticalAlignment="Top"  Height="31" Width="64" TextAlignment="Justify"/>
+        <ComboBox x:Name="cbLimpieza" HorizontalAlignment="Left" Margin="102,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbLimpieza_SelectionChanged">
+            <ComboBoxItem>Jabon Ace</ComboBoxItem>
+            <ComboBoxItem>Fabuloso</ComboBoxItem>
+            <ComboBoxItem>Trapeador</ComboBoxItem>
+            <ComboBoxItem>Escoba</ComboBoxItem>
+            <ComboBoxItem>Esponja</ComboBoxItem>
+            <ComboBoxItem>Trapo</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="lblEquipoLimpiezaTipoVales" HorizontalAlignment="Left" Margin="10,309,0,0" TextWrapping="Wrap" Text="Si indico que si eliga su tipo de tarjeta:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblEquipoLimpiezaVales" HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="Usar vales de tarjeta:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbEquipoLimpiezaValesNinguna" Content="Ninguna" HorizontalAlignment="Left" Margin="237,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxEquipoLimpiezaValesSi" Content="Si" HorizontalAlignment="Left" Margin="152,278,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbEquipoLimpiezaValesBasica" Content="Basica" HorizontalAlignment="Left" Margin="318,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxEquipoLimpiezaValesNo" Content="No" HorizontalAlignment="Left" Margin="208,278,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbEquipoLimpiezaValesAmigoSoriana" Content="AmigoSoriana" HorizontalAlignment="Left" Margin="390,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbEquipoLimpiezaValesDeluxe" Content="Deluxe" HorizontalAlignment="Left" Margin="506,310,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbEquipoLimpiezaValesPro" Content="ProMasterComprador" HorizontalAlignment="Left" Margin="584,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxEquipoLimpiezaKitSi" Content="Si" HorizontalAlignment="Left" Margin="130,244,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbxEquipoLimpiezaKitNo" Content="No" HorizontalAlignment="Left" Margin="186,244,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</UserControl>
